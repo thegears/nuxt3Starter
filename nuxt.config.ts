@@ -5,4 +5,7 @@ export default defineNuxtConfig({
     buildModules: [
         'nuxt-windicss',
     ],
+    serverMiddleware: [
+        { path: "/api", handler: "~/server/api.ts" },
+    ]
 })
