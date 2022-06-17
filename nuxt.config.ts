@@ -2,7 +2,7 @@ import { defineNuxtConfig } from 'nuxt';
 
 export default defineNuxtConfig({
     buildModules: [
-        'nuxt-windicss','@nuxtjs/pwa'
+        '@nuxtjs/pwa'
     ],
     serverMiddleware: [
         { path: "/api", handler: "~/server/api.ts" },
